@@ -1,0 +1,28 @@
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .marquee-inner {
+    display: flex;
+    width: 200%; /* Ensures seamless looping */
+    animation: marquee-scroll 20s linear infinite;
+  }
+  
+  .marquee-img {
+    width: 100%; /* Covers full width */
+    flex-shrink: 0;
+  }
+  
+  /* Smooth infinite scrolling effect */
+  @keyframes marquee-scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  

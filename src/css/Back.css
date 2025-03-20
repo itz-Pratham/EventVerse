@@ -1,0 +1,22 @@
+.Background {
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Background img {
+    width: 100%; /* Ensures responsiveness */
+    max-width: 1200px; /* Limit width on larger screens */
+    border-radius: 20px;
+}
+
+/* Media query for phones */
+@media (max-width: 768px) {
+    .Background img {
+        content: url("https://www.jashnerekhta.org/assets/img/homepagebannerMob.jpg"); /* Replace with the mobile image URL */
+        width: 100%;
+        max-width: 100%;
+        border-radius: 10px;
+    }
+}
